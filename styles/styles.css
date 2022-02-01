@@ -1,0 +1,109 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Proxima, sans-serif;
+  font-size: 16px;
+  color: #464662;
+  line-height: 1.55;
+  font-weight: 400;
+  overflow: hidden;
+}
+.navbar {
+  display: grid;
+  grid-template-areas:
+    "header ham"
+    "header ham"
+    "m m"
+    "m m"
+    "m m"
+    "m m"
+    "button button";
+}
+
+.Header_logo {
+  grid-area: header;
+  display: flex;
+}
+.Header_logo img {
+  margin: 5px 10px 0 0;
+  width: 50px;
+}
+.Header_logo h3 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.menus {
+  grid-area: m;
+}
+.navbar_menu {
+  display: flex;
+  flex-flow: column;
+}
+.header_controller {
+  grid-area: button;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  grid-area: ham;
+  display: flex;
+  justify-self: flex-end;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  padding: 16px 12px;
+  outline: 0;
+  border: none;
+  background: none;
+  margin: auto 10px auto 10px;
+}
+
+.button {
+  display: flex;
+  background-color: #17173a;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  letter-spacing: 0.3px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #464662;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  background-color: #17173a;
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-color: #17173a;
+}
+.main_rectangle .main_rectangle__2VaGt {
+  position: absolute;
+  top: -5%;
+  right: 0;
+  z-index: -1;
+  width: 50vw;
+}
